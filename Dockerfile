@@ -41,7 +41,8 @@ RUN apk --no-cache add \
                    vim \
                    supervisor \
                    python3 \
-                   python3-dev
+                   python3-dev \
+                   busybox-extras
 
 # Create symlink so programs on php would know
 RUN ln -s /usr/bin/php8 /usr/bin/php
