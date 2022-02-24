@@ -43,8 +43,6 @@ RUN apk --no-cache add \
                    python3 \
                    python3-dev
 
-RUN npm install -g yarn node-gyp
-
 # Create symlink so programs on php would know
 RUN ln -s /usr/bin/php8 /usr/bin/php
 
