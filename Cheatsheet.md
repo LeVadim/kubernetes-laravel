@@ -1,4 +1,5 @@
-# I suggest always having some sort of "Cheat Sheet".  This is where you store all the commands that you use in your daily life.  It doesn't make sense to memorize every single command, it is just not feasible.  This is why I suggest saving this cheat sheet that you will use in this course and improving it later on as you go.
+# Importance of Cheat Sheet
+I suggest always having some sort of "Cheat Sheet".  This is where you store all the commands that you use in your daily life.  It doesn't make sense to memorize every single command, it is just not feasible.  This is why I suggest saving this cheat sheet that you will use in this course and improving it later on as you go.
 
 Cheatsheet:
 
