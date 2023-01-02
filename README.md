@@ -1,7 +1,4 @@
-Hi Student!
-
-# I have attached the code base for React JS deployed on Kubernetes that you will use in this chapter.  If you get stuck at any moment, please feel free to refer to this code.
-
+# Hi! I have attached the code base for Laravel deployed on Kubernetes that you will use in this chapter.  If you get stuck at any moment, please feel free to refer to this code.
 
 Just in case, please see below an explanation of each folder:
 
