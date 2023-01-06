@@ -32,6 +32,7 @@ Make sure that these files are deployed on your GitHub repository.
 `docker run -p 80:8080 laraveldocker`
 
 `go to localhost on your browser and check out the result`
+
 FYI: if you are running it locally, not via docker, it will show 500 Error because it will be missing APP_KEY in .env file.  Normally it would be initated in Kubernetes when we run init.php file.
 
 # Additionally, please refer to `Cheatsheet.md` for list of useful commands or see below.
