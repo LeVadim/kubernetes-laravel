@@ -5,32 +5,32 @@ ARG CONFIG_PATH
 # Installing PACKAGES
 RUN apk --no-cache add \
                    nginx \
-                   php8 \
-                   php8-common \
-                   php8-cli \
-                   php8-fpm \
-                   php8-dom \
-                   php8-gd \
-                   php8-mbstring \
-                   php8-xml \
-                   php8-intl \
-                   php8-curl \
-                   php8-gmp \
-                   php8-xml \
-                   php8-bcmath \
-                   php8-pcntl \
-                   php8-posix \
-                   php8-zip \
-                   php8-redis \
-                   php8-phar \
-                   php8-openssl \
-                   php8-ctype \
-                   php8-json \
-                   php8-opcache \
-                   php8-session \
-                   php8-zlib \
-                   php8-tokenizer \
-                   php8-fileinfo \
+                   php81 \
+                   php81-common \
+                   php81-cli \
+                   php81-fpm \
+                   php81-dom \
+                   php81-gd \
+                   php81-mbstring \
+                   php81-xml \
+                   php81-intl \
+                   php81-curl \
+                   php81-gmp \
+                   php81-xml \
+                   php81-bcmath \
+                   php81-pcntl \
+                   php81-posix \
+                   php81-zip \
+                   php81-redis \
+                   php81-phar \
+                   php81-openssl \
+                   php81-ctype \
+                   php81-json \
+                   php81-opcache \
+                   php81-session \
+                   php81-zlib \
+                   php81-tokenizer \
+                   php81-fileinfo \
                    wget \
                    unzip \
                    gcc \
@@ -44,17 +44,14 @@ RUN apk --no-cache add \
                    python3-dev \
                    busybox-extras
 
-# Create symlink so programs on php would know
-RUN ln -s /usr/bin/php8 /usr/bin/php
-
 # Make directories
 RUN mkdir -p /var/www/html
 
 # Configs
 COPY config/supervisord.conf /etc/supervisord.conf
 COPY config/nginx.conf /etc/nginx/nginx.conf
-COPY config/fpm-pool.conf /etc/php8/php-fpm.d/www.conf
-COPY config/php.ini /etc/php8/conf.d/custom.ini
+COPY config/fpm-pool.conf /etc/php81/php-fpm.d/www.conf
+COPY config/php.ini /etc/php81/conf.d/custom.ini
 
 # Entrypoint
 COPY --chown=nginx config/entrypoint.sh /entrypoint.sh
